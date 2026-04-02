@@ -20,30 +20,53 @@ if f_choose == "1":
     print("[3] Frações, MMC e MDC")
     print("[4] Regra de Três, Razão e Proporção") #como funcionaria a regra de 3 aqui?
     s_choose = input("Escolha: ") #Second choose = segunda escolha
+
     if s_choose == "1":
         fum_s = input(" Vc quer somar, subtrair, dividir ou multiplicar: ").lower()[0:2]
+
         if fum_s == "so":
             x = float(input("Qual o primeiro valor: "))
             y = float(input("Qual o segundo valor: "))
             result = x + y
             print(f"O resultado foi de {result}")
-        if fum_s == "su":
+
+        elif fum_s == "su":
             x = float(input("Qual o primeiro valor: "))
             y = float(input("Qual o segundo valor: "))
             result = x - y
             print(f"O resultado foi de {result}")
-        if fum_s == "di":
+
+        elif fum_s == "di":
             x = float(input("Qual o primeiro valor: "))
             y = float(input("Qual o segundo valor: "))
             result = x / y
             print(f"O resultado foi de {result}")
-        if fum_s == "mu":
+
+        elif fum_s == "mu":
             x = float(input("Qual o primeiro valor: "))
             y = float(input("Qual o segundo valor: "))
             result = x * y
             print(f"O resultado foi de {result}")
+
+    elif s_choose == "2":
+        fdois_s = input(" Vc quer fazer potênciação ou radiciação: ").lower()[0:2]
+
+        if fdois_s == "po":
+            x = float(input("Qual o valor base: "))
+            y = float(input("Qual o expoente: "))
+            result = x ** y
+            print(f"O resultado foi de {result}")
+        
+        elif fdois_s == "ra":
+            x = float(input("Qual o valor do radicando: "))
+            rad_q = x ** (1/2)
+            rad_c = x ** (1/3)
+            print(f"Seus resultados são, raiz quadrada = {rad_q} e raiz cúbica = {rad_c}")
+
+
     else:
         print("Não tem essa opção...")
+
 elif f_choose == "2":
     print()
     print("[1] Equações 1° e 2°")
