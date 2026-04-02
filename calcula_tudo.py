@@ -1,6 +1,5 @@
 # ============================================================
 #         PROJETO DE MATEMÁTICA - COMPLETO
-#   Sem imports! Tudo feito na mão mesmo :)
 # ============================================================
 
 PI = 3.14159265358979  # valor de pi que vamos usar em tudo
